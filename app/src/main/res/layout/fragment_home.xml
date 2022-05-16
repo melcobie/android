@@ -42,8 +42,8 @@
 
             <TextView
                 android:id="@+id/textView"
-                android:layout_width="144dp"
-                android:layout_height="70dp"
+                android:layout_width="203dp"
+                android:layout_height="85dp"
                 android:fontFamily="@font/snowburst_one"
                 android:text="@string/lessons"
                 android:textAllCaps="true"
@@ -77,8 +77,8 @@
 
             <TextView
                 android:id="@+id/textView2"
-                android:layout_width="144dp"
-                android:layout_height="70dp"
+                android:layout_width="178dp"
+                android:layout_height="80dp"
                 android:fontFamily="@font/snowburst_one"
                 android:text="@string/quizz"
                 android:textAllCaps="true"
