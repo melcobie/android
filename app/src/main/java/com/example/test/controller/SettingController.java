@@ -9,7 +9,7 @@ public final class SettingController {
 
     private SettingController(){}
 
-    public static final SettingController getInstance(Context context){
+    public static final SettingController getInstance(){
         if(SettingController.instance == null){
             SettingController.instance = new SettingController();
         }
