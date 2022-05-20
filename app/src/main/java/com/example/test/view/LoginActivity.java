@@ -32,6 +32,7 @@ public class LoginActivity extends AppCompatActivity {
     private TextView inscription;
     private EditText Pseudo;
     private EditText MotDePass;
+    private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +51,14 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+        this.button = (Button)findViewById(R.id.login);
+        this.button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, HomepageActivity.class);
                 startActivity(intent);
             }
         });

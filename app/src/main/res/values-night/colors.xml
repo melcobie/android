@@ -14,4 +14,7 @@
     <!-- Backgrounds    -->
     <color name="background">#254968</color>
     <color name="background_setting">#305470</color>
+    <color name="background_navigation">#1B3345</color>
+    <color name="section_title">#B5CFF6</color>
+    <color name="more">#d8ebf9</color>
 </resources>
