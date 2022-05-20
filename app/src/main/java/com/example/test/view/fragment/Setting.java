@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,6 +33,7 @@ public class Setting extends Fragment {
             @Override
             public void onClick(View view) {
                 SettingDialog dialog = new SettingDialog();
+                Log.d("parent", getParentFragmentManager().toString());
                 dialog.show(getParentFragmentManager(), "test");
             }
         });

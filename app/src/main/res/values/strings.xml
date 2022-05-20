@@ -3,4 +3,12 @@
 
     <string name="lessons">Leçons</string>
     <string name="quizz">Quizz</string>
+    <string name="more">Plus ultérieurement ... </string>
+    <string name="recherche">Rechercher ... </string>
+    <string name="description">Description</string>
+    <string name="nom">Nom</string>
+    <string name="genre">Genre</string>
+    <string name="video">Voir informations ...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

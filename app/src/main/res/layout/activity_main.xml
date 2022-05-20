@@ -9,7 +9,7 @@
 
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragment"
+        android:id="@+id/fragment_back"
         android:name="com.example.test.view.fragment.Setting"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -15,6 +15,20 @@
         android:orientation="vertical"
         android:paddingBottom="20dp">
 
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragment_back"
+            android:name="com.example.test.view.fragment.Setting"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </androidx.fragment.app.FragmentContainerView>
+
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="306dp"
@@ -33,7 +47,7 @@
             android:paddingBottom="40dp">
 
             <ImageView
-                android:id="@+id/imageView4"
+                android:id="@+id/lesson_image"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:src="@drawable/learn_menu"
@@ -49,12 +63,11 @@
                 android:textAllCaps="true"
                 android:textSize="42sp"
                 android:textStyle="bold|italic"
-                app:layout_constraintBottom_toBottomOf="@+id/imageView4"
-                app:layout_constraintEnd_toEndOf="@+id/imageView4"
-                app:layout_constraintHorizontal_bias="0.768"
-                app:layout_constraintStart_toStartOf="@+id/imageView4"
-                app:layout_constraintTop_toTopOf="@+id/imageView4"
-                app:layout_constraintVertical_bias="0.496" />
+                app:layout_constraintBottom_toBottomOf="@+id/lesson_image"
+                app:layout_constraintEnd_toEndOf="@+id/lesson_image"
+                app:layout_constraintHorizontal_bias="0.783"
+                app:layout_constraintStart_toStartOf="@+id/lesson_image"
+                app:layout_constraintTop_toTopOf="@+id/lesson_image" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -68,7 +81,7 @@
             android:paddingBottom="40dp">
 
             <ImageView
-                android:id="@+id/imageView5"
+                android:id="@+id/quizz_image"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:src="@drawable/game_menu"
@@ -84,12 +97,12 @@
                 android:textAllCaps="true"
                 android:textSize="42sp"
                 android:textStyle="bold|italic"
-                app:layout_constraintBottom_toBottomOf="@+id/imageView5"
-                app:layout_constraintEnd_toEndOf="@+id/imageView5"
-                app:layout_constraintHorizontal_bias="0.202"
-                app:layout_constraintStart_toStartOf="@+id/imageView5"
-                app:layout_constraintTop_toTopOf="@+id/imageView5"
-                app:layout_constraintVertical_bias="0.496" />
+                app:layout_constraintBottom_toBottomOf="@+id/quizz_image"
+                app:layout_constraintEnd_toEndOf="@+id/quizz_image"
+                app:layout_constraintHorizontal_bias="0.132"
+                app:layout_constraintStart_toStartOf="@+id/quizz_image"
+                app:layout_constraintTop_toTopOf="@+id/quizz_image"
+                app:layout_constraintVertical_bias="0.494" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>
