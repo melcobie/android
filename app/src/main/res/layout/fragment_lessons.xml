@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.fragment.LessonsFragment"
+    tools:context=".view.fragment.lesson.LessonsFragment"
     android:background="@color/background">
 
     <LinearLayout
@@ -43,12 +43,13 @@
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/snowburst_one"
+            android:fontFamily="@font/aclonica"
             android:paddingLeft="40dp"
             android:paddingTop="20dp"
             android:paddingRight="40dp"
             android:paddingBottom="20dp"
             android:text="@string/lessons"
+            android:textAllCaps="true"
             android:textAppearance="@style/TextAppearance.AppCompat.Display2"
             android:textColor="@color/section_title" />
 

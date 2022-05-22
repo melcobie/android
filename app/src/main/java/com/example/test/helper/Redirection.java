@@ -10,8 +10,12 @@ import com.example.test.R;
 
 public class Redirection {
     public static void goToFragment(FragmentManager fragmentManager, Fragment direction){
+        goToFragment(R.id.content, fragmentManager, direction);
+    }
+
+    public static void goToFragment(int CONTENT, FragmentManager fragmentManager, Fragment direction){
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.content, direction);
+        fragmentTransaction.replace(CONTENT, direction);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }

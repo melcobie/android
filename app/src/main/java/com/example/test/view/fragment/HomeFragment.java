@@ -10,6 +10,8 @@ import androidx.fragment.app.Fragment;
 
 import com.example.test.R;
 import com.example.test.helper.Redirection;
+import com.example.test.view.fragment.lesson.LessonsFragment;
+import com.example.test.view.fragment.quizz.QuizzFragment;
 
 public class HomeFragment extends Fragment {
 
@@ -35,11 +37,19 @@ public class HomeFragment extends Fragment {
         this.quizzButton = (ImageView)view.findViewById(R.id.quizz_image);
         
         Fragment lessons = new LessonsFragment();
+        Fragment quizz = new QuizzFragment();
 
         this.learnButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Redirection.goToFragment(getParentFragmentManager(), lessons);
+            }
+        });
+
+        this.quizzButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Redirection.goToFragment(getParentFragmentManager(), quizz);
             }
         });
     }

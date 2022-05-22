@@ -1,6 +1,5 @@
-package com.example.test.view.fragment;
+package com.example.test.view.fragment.lesson;
 
-import android.media.Image;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -12,6 +11,7 @@ import android.widget.ImageView;
 
 import com.example.test.R;
 import com.example.test.helper.Redirection;
+import com.example.test.view.fragment.HomeFragment;
 
 public class LessonsFragment extends Fragment {
 

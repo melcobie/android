@@ -12,9 +12,16 @@
     <color name="btn_color">#0000ff</color>
 
     <!-- Backgrounds    -->
-    <color name="background">#DFE8E8</color>
+    <color name="background">#EBEFF3</color>
     <color name="background_setting">#F7F8F8</color>
     <color name="background_navigation">#F5F8F8</color>
+
+    <!--  Texts  -->
     <color name="section_title">#2943EC</color>
     <color name="more">#1d3f72</color>
+    <color name="quizz">#F44336</color>
+
+    <color name="button_quizz">#dddddd</color>
+
+
 </resources>

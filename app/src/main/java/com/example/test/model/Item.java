@@ -7,6 +7,7 @@ public class Item implements Serializable {
     private String name;
     private String description = "";
     private String genre = "masculin";
+    private String urlVideo;
 
     public Item(String url, String name) {
         this.url = url;
@@ -18,6 +19,14 @@ public class Item implements Serializable {
         this.name = name;
         this.description = description;
         this.genre = genre;
+    }
+
+    public String getUrlVideo() {
+        return urlVideo;
+    }
+
+    public void setUrlVideo(String urlVideo) {
+        this.urlVideo = urlVideo;
     }
 
     public String getUrl() {

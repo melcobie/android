@@ -6,13 +6,13 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import com.example.test.R;
 import com.example.test.helper.Redirection;
 import com.example.test.view.fragment.HomeFragment;
-import com.example.test.view.fragment.LessonsFragment;
+import com.example.test.view.fragment.lesson.LessonsFragment;
+import com.example.test.view.fragment.quizz.QuizzFragment;
 
 public class HomepageActivity extends AppCompatActivity {
 
@@ -35,6 +35,7 @@ public class HomepageActivity extends AppCompatActivity {
 
         Fragment homepage = new HomeFragment();
         Fragment lessons = new LessonsFragment();
+        Fragment quizz = new QuizzFragment();
 
         FragmentTransaction frgTrans = getSupportFragmentManager().beginTransaction();
         frgTrans.replace(R.id.content, homepage);
@@ -51,6 +52,13 @@ public class HomepageActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Redirection.goToFragment(getSupportFragmentManager(), lessons);
+            }
+        });
+
+        this.gameButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Redirection.goToFragment(getSupportFragmentManager(), quizz);
             }
         });
     }

@@ -58,10 +58,10 @@
                 android:id="@+id/textView"
                 android:layout_width="203dp"
                 android:layout_height="85dp"
-                android:fontFamily="@font/snowburst_one"
+                android:fontFamily="@font/aclonica"
                 android:text="@string/lessons"
                 android:textAllCaps="true"
-                android:textSize="42sp"
+                android:textSize="36sp"
                 android:textStyle="bold|italic"
                 app:layout_constraintBottom_toBottomOf="@+id/lesson_image"
                 app:layout_constraintEnd_toEndOf="@+id/lesson_image"
@@ -92,17 +92,16 @@
                 android:id="@+id/textView2"
                 android:layout_width="178dp"
                 android:layout_height="80dp"
-                android:fontFamily="@font/snowburst_one"
+                android:fontFamily="@font/aclonica"
                 android:text="@string/quizz"
                 android:textAllCaps="true"
-                android:textSize="42sp"
+                android:textSize="36sp"
                 android:textStyle="bold|italic"
                 app:layout_constraintBottom_toBottomOf="@+id/quizz_image"
                 app:layout_constraintEnd_toEndOf="@+id/quizz_image"
-                app:layout_constraintHorizontal_bias="0.132"
+                app:layout_constraintHorizontal_bias="0.306"
                 app:layout_constraintStart_toStartOf="@+id/quizz_image"
-                app:layout_constraintTop_toTopOf="@+id/quizz_image"
-                app:layout_constraintVertical_bias="0.494" />
+                app:layout_constraintTop_toTopOf="@+id/quizz_image" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>

@@ -1,4 +1,4 @@
-package com.example.test.view.fragment;
+package com.example.test.view.fragment.lesson;
 
 import android.os.Bundle;
 
@@ -9,7 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.example.test.R;
 import com.example.test.controller.ListController;
@@ -40,7 +39,11 @@ public class ListFragment extends Fragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
+        if (getArguments() != null) {
+            this.type = getArguments().getString("type");
+        }
     }
 
     public void init(View view){

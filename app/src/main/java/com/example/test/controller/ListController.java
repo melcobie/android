@@ -3,7 +3,7 @@ package com.example.test.controller;
 import android.content.Context;
 
 import com.example.test.model.Item;
-import com.example.test.view.fragment.LessonsFragment;
+import com.example.test.view.fragment.lesson.LessonsFragment;
 
 import java.util.ArrayList;
 

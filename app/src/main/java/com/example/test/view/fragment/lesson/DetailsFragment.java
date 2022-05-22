@@ -1,4 +1,4 @@
-package com.example.test.view.fragment;
+package com.example.test.view.fragment.lesson;
 
 import android.os.Bundle;
 

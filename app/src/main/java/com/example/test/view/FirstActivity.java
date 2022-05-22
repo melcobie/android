@@ -1,4 +1,4 @@
-package com.example.test.view.fragment;
+package com.example.test.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import com.example.test.R;
-import com.example.test.view.MainActivity;
 
 public class FirstActivity extends AppCompatActivity {
     Handler handler = new Handler();
