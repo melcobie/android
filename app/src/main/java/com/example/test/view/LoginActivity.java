@@ -88,7 +88,7 @@ public class LoginActivity extends AppCompatActivity {
                                         System.out.println(response.body() );
                                         result.add (response.body().getUser());
                                         doSave(response.body().getAccessToken(), result.get(0).getPseudo());
-                                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                                        Intent intent = new Intent(LoginActivity.this, HomepageActivity.class);
                                         startActivity(intent);
                                     } else {
                                         Toast.makeText(LoginActivity.this, "Login ou mots de passe incorrecte", Toast.LENGTH_LONG).show();

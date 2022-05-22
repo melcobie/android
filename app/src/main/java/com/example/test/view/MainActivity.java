@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
                                     if (response.body() != null) {
                                         System.out.println(response.body().getUser().getPseudo());
                                         doSave(response.body().getAccessToken(), response.body().getUser().getPseudo(),sharedPreferences);
-                                        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                                        Intent intent = new Intent(MainActivity.this, HomepageActivity.class);
                                         startActivity(intent);
                                     } else {
                                         Toast.makeText(MainActivity.this, "Login ou mots de passe incorrecte", Toast.LENGTH_LONG).show();
