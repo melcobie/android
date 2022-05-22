@@ -1,11 +1,19 @@
 package com.example.test.model;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.io.Serializable;
 
 public class Item implements Serializable {
+    @SerializedName("_id")
+    private String id;
+    @SerializedName("url")
     private String url;
+    @SerializedName("name")
     private String name;
+    @SerializedName("description")
     private String description = "";
+    @SerializedName("genre")
     private String genre = "masculin";
     private String urlVideo;
 

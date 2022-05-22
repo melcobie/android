@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent"/>
 
     <EditText
-        android:id="@+id/username1"
+        android:id="@+id/Pseudo"
         android:layout_width="268dp"
         android:layout_height="70dp"
         android:layout_marginBottom="268dp"
@@ -36,7 +36,7 @@
         android:fontFamily="@font/abel"/>
 
     <EditText
-        android:id="@+id/password1"
+        android:id="@+id/password"
         android:layout_width="268dp"
         android:layout_height="70dp"
         android:layout_marginBottom="184dp"

@@ -11,12 +11,19 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.test.R;
+import com.example.test.Utils.RetrofitClient;
 import com.example.test.controller.ListController;
 import com.example.test.helper.Redirection;
+import com.example.test.model.Categorie;
 import com.example.test.model.Item;
+import com.example.test.services.LeconsServices;
 import com.example.test.view.adapter.ItemListAdapter;
 
 import java.util.ArrayList;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 
 public class ListFragment extends Fragment {
@@ -49,6 +56,7 @@ public class ListFragment extends Fragment {
     public void init(View view){
         this.listView = (ListView) view.findViewById(R.id.list);
         ArrayList<Item> item = this.listController.getItems(this.type);
+
         ItemListAdapter itemListAdapter = new ItemListAdapter(view.getContext(), item);
 
         listView.setAdapter(itemListAdapter);
@@ -67,6 +75,7 @@ public class ListFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_list, container, false);
+
         this.listController = ListController.getInstance(getContext());
         this.init(view);
 
