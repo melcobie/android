@@ -14,7 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.test.R;
-import com.example.test.Utils.RetrofitClient;
+import com.example.test.helper.RetrofitClient;
 import com.example.test.controller.SettingController;
 import com.example.test.model.Profils;
 import com.example.test.model.ProfilsResponses;
@@ -50,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
         this.MotDePass = (EditText) findViewById(R.id.password);
         SharedPreferences sharedPreferences= this.getSharedPreferences("userIdentity", Context.MODE_PRIVATE);
         this.connexion = (TextView) findViewById(R.id.connexion);
-        inscription( sharedPreferences);
         String name = sharedPreferences.getString("token",null);
         if(name !=null){
             Intent intent = new Intent(MainActivity.this, LoginActivity.class);
@@ -67,15 +66,12 @@ public class MainActivity extends AppCompatActivity {
         this.button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, HomepageActivity.class);
-                startActivity(intent);
+                inscription(sharedPreferences);
             }
         });
     }
 
     private void inscription(SharedPreferences sharedPreferences) {
-        ((Button) findViewById(R.id.login)).setOnClickListener(new Button.OnClickListener() {
-            public void onClick(View v) {
                 final ProgressDialog progressDialog = new ProgressDialog(MainActivity.this);
                 progressDialog.setCancelable(false);
                 progressDialog.setMessage("Chargement");
@@ -115,8 +111,6 @@ public class MainActivity extends AppCompatActivity {
                 } catch (Exception e) {
                     Toast.makeText(MainActivity.this, " une erreur est survenue", Toast.LENGTH_SHORT).show();
                 }
-            }
-        });
     }
     public void doSave(String token,String login, SharedPreferences sharedPreferences)  {
 
